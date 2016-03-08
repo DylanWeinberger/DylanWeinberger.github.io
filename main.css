@@ -1,0 +1,212 @@
+
+
+body {
+	background-image: url("images/brickwall.png");
+	background-attachment: fixed;
+	/*background-size: cover;*/
+}
+
+
+nav{
+	width: 100%;
+}
+nav ul {
+	list-style: none;
+	display: inline-flex;
+	justify-content: space-between;
+	/*display: inline-flex;*/
+}
+
+nav ul li {
+	padding-right: 20px;
+	
+
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Vollkorn', serif;
+	font-size: 24px;
+	transition: .7s;
+}
+
+nav ul li a:hover {
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+	text-decoration: underline;
+} 
+
+/*Container of each section and parallax image section*/
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+  /*SECTIONS*/
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 30px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 300;
+  font-family: 'Philosopher', sans-serif;
+}
+/*content images*/
+.kiwi {
+	width: 250px;
+	float: left;
+	margin-right: 20px;
+	/*padding-right: 20px;*/
+	/*I am currently having an issue with a tiny piece of the box shadow in the image being part of the background*/
+	box-shadow: 5px 5px 3px #888888;
+  	-webkit-box-shadow: 5px 5px 3px #888888;
+  	-moz-box-shadow: 5px 5px 3px #888888;
+}
+
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 36px;
+  line-height: 200px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+section.module.parallax-1 {
+  background-image: url("images/grafitti.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("images/dev.jpeg");
+}
+section.module.parallax-3 {
+  background-image: url("images/dylanheadshot.jpg");
+}
+
+section.module.parallax-2 {
+  margin-top: 200px;
+}
+
+.jorts {
+	padding-top: 50px;
+
+}
+
+.jorts h2 {
+	text-align: center;
+	/*margin-top: 20px;*/
+	/*text-align: center;*/
+	/*word-wrap: normal;*/
+	/*float: left;*/
+}
+
+.jorts a {
+	text-decoration: none;
+	color: black;
+	transition: .7s;
+}
+
+.jorts a:hover {
+	color: #D0333E;
+	text-decoration: underline;
+}
+
+.jortsimg {
+	width: 650px;
+	float: right;
+	margin-left: 20px;
+	/*padding-right: 20px;*/
+	/*I am currently having an issue with a tiny piece of the box shadow in the image being part of the background*/
+	box-shadow: 5px 5px 3px #888888;
+  	-webkit-box-shadow: 5px 5px 3px #888888;
+  	-moz-box-shadow: 5px 5px 3px #888888;
+  	border-radius: 10px;
+  	transition: .7s;
+}
+
+.jortsimg:hover {
+	box-shadow: 8px 8px 5px #D0333E;
+  	-webkit-box-shadow: 8px 8px 5px #D0333E;
+  	-moz-box-shadow: 8px 8px 5px #D0333E;
+}
+.contact {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.contact img {
+	width: 100px;
+	transition: .7s;
+}
+
+.contact img:hover {
+	box-shadow: 5px 5px 3px #888888 inset;
+  	-webkit-box-shadow: 5px 5px 3px #888888;
+  	-moz-box-shadow: 5px 5px 3px #888888;
+}
+
+.contact a {
+	text-decoration: none;
+	color: black;
+	transition: .7s;
+}
+
+.contact a:hover {
+	text-decoration: underline;
+	color: #D0333E;
+}
+
+
+
+.eachcontact {
+	display: block;
+	width: 200px;
+
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax-1 h1 {
+    font-size: 160px;
+  }
+   section.module.parallax-1 h2 {
+    font-size: 64px;
+  }
+}
+
